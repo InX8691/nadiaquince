@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>XV AÑOS NADIA</title>
+  <!--ICONO-->
+  <link rel="icon" type="image/x-icon" href="../invitación/assets/img/flower3.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="top">
+  <!-- Navigation-->
+  <button class="btnA" onclick="audio.play();"></button>
+  <script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "./A_Thousand_Years.mp3";
+  </script>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-black text-center">
+          <h2 class="mx-auto my-0">MIS XV AÑOS</h2>
+          <h1 class="mx-auto my-0 text-uppercase">NADIA</h1>
+          <h1 class="mx-auto my-0 text-uppercase">Yamilet</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            <h3 class="mx-auto my-0"> SABADO 08 JUNIO 2024</h3>
+          </h2>
+          <!--contador-->
+          <section>
+            <div class="text-white-50" id="countdown"></div>
+            <script>
+              var end = new Date("06/08/24 9:30 AM");
+
+              var _second = 1000;
+              var _minute = _second * 60;
+              var _hour = _minute * 60;
+              var _day = _hour * 24;
+              var timer;
+
+              function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+                  clearInterval(timer);
+                  document.getElementById("countdown").innerHTML = "EXPIRED!";
+
+                  return;
+                }
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+
+                document.getElementById("countdown").innerHTML =
+                  days + " Días | ";
+                document.getElementById("countdown").innerHTML +=
+                  hours + " Horas | ";
+                document.getElementById("countdown").innerHTML +=
+                  minutes + " Minutos  ";
+                /*document.getElementById("countdown").innerHTML +=
+                  seconds + " Segundos  ";*/
+              }
+
+              timer = setInterval(showRemaining, 1);
+            </script>
+          </section>
+          <!-- fin de contador-->
+
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- second page-->
+
+  <section class="about-section text-center" id="about">
+    <h2 class="text-center col 6">
+      Hoy quiero compartir mi alegría <br> con todas las personas <br> a las que amo y me aman, <br> por eso tú tienes
+      que
+      ser
+      parte <br> de
+      esta fiesta.
+       
+    </h2>
+
+    <h3 class="text-center col 6 text-white-50">En compañia de :</h3>
+    <p class="text-white-50 col-3"> 
+      Mis padres:<br /><br />
+      Dinora Borjas Torres <br /> & <br />
+      Julio Rocha Martínez
+    </p>
+    <p class="text-white-50 col-3">                         
+      Mis padrinos<br /><br />Rosio Silva Moreno<br /> &
+      <br />Salomón Torres Morales
+    </p>
+  </section>
+  <!-- Projects-->
+  <section class="projects-section" id="projects">
+    <h1 class=" text-center text-white-50">Ceremonia Religiosa</h1>
+    <!-- Projects ceremonia-->
+    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="iglesia">
+      <div class="col-lg-6">
+
+        <p class="text-white text-center">
+          Parroquia de nuestra señora <br />
+          de las 3 ave marias <br />
+          <br />
+          6:00 P.M.
+        </p>
+
+
+        <p class="text-white text-center">
+        </p>
+
+
+
+      </div>
+      <div class="col-lg-3"> </div>
+      <div class="col-lg-3"> </div>
+      <div class="col-lg-6">
+        <div class="bg-green text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">
+                <img src="assets/fotos/iglesia_nadia.jpg" alt="iglesia.jpg" width="250" height="200">
+              </h4>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Abrir mapa
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3"> </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ceremonia Religiosa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.4990517386586!2d-101.00557472471195!3d22.145067779798495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98b5fc6cc0a1%3A0x41f94d78799e6065!2sParroquia%20Nuestra%20Se%C3%B1ora%20de%20las%20Tres%20Avemar%C3%ADas!5e0!3m2!1ses-419!2smx!4v1716079243571!5m2!1ses-419!2smx"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Project Two Row-->
+  <section class="projects-section bg-light" id="projects">
+    <h1 class=" text-center text-white-50">Recepcion</h1>
+    <div class="container px-4 px-lg-6">
+      <!-- Projects recepción-->
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <div class="col-lg-3"> </div>
+        <div class="col-lg-6">
+          <p class="text-white text-center">
+            Salon residencial del parque <br />
+            6:30 P.M.
+
+          </p>
+        </div>
+        <div class="col-lg-3"> </div>
+        <div class="col-lg-3"> </div>
+        <div class="col-lg-6">
+          <div class="text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">
+                  <img class="align-items-center" src="assets/fotos/salon_nadia.jpg" alt="salon.jpg" width="250"
+                    height="200">
+                </h4>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                  Abrir mapa
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3"> </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Recepción</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.8664716842986!2d-101.01566588849987!3d22.131066248922753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98c33fd09625%3A0xa54aa57bd9ecd1b4!2sSalon%20Residencial%20del%20Parque!5e0!3m2!1ses-419!2smx!4v1716080687411!5m2!1ses-419!2smx"
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DRESS CODE-->
+  <section class="dress-code" id="dress">
+    <h1 class=" text-center" id="vestimenta">Codigo de vestimenta</h1>
+    <p class="text-center">El color Rosa está reservado <br> para la festejada</p>
+    <h2 class="text-center">Lluvia de sobres</h2>
+    <p class="text-center" id="din">Tu presencia es lo mas importante <br> en este dia tan especial <br> pero si algo me
+      gustan
+      obsequiar,
+      <br>en efectivo lo sabre
+      apreciar
+    </p>
+  </section>
+
+</body>
+
+</html>
